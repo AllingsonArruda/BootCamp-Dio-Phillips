@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is the name of your contry?</title>
+</head>
+<body> 
+    <h1>Hey, what's up?</h1>
+<h2> Type the name of your country:</h2> <input type="text" name="pais" id="pais">
+                                    <input type="button" value="Verify" onclick="Verify()">
+                                    <input type="button" value="Clear" onclick="Clear()">
+                                    <div id='res'>  </div>
+                <script>
+                  
+                    function Verify(){
+                        var country = window.document.querySelector('input#pais')
+                        var res = window.document.querySelector('div#res')
+                        var pais = (country.value) 
+                        if (pais == 'Brasil'){
+                            res.innerHTML = ` You are Brazilian!`
+                        } else {
+                            res.innerHTML = `You are not Brazilian!`
+                        }
+                       }
+                            function clear(){ 
+                            var limpar = window.document.querySelector('input#Clear')
+                            window.document.querySelector("input#pais").removeAttribute("res");
+
+                        }
+
+                       
+                     
+            
+
+                </script>        
+                            
+</body>
+</html>

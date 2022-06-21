@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body{
+            background-color: rgb(22, 144, 128);
+            color: rgb(20, 16, 147);
+            font-size: 25pt;
+        }
+            input{
+                font: normal 15pt Arial;
+                width: 120px;    
+            }
+        p{
+           text-align: center;
+            color: rgb(32, 46, 105);
+        }
+        input{
+            text-align: center;
+            width: auto;
+        }           
+            input#tx2{
+                width: 70px;
+            }   
+            input#tx1{
+                width: 70px;
+            }
+            div#res{
+                margin-top: auto;
+            }
+        </style>
+</head>
+<body>
+   <center>        <h1>Welcome!</h1>
+   </center>
+    <p>Select the Operation</p>
+    <p> Tudo bem?</p>
+    <script> 
+        var nome =  window.prompt("Olá, digite seu nome: ")
+        var p1 = window.document.getElementsByTagName('p')[1]    
+        p1.innerText = `Hi, ${nome}. Select the operation and type the numbers! `
+            </script>
+
+                <center>
+                <input type="button" value="soma" onclick="somar()">
+                <input type="button" value="subtração" onclick="subtrair()">
+                <input type="button" value="multiplicação" onclick="multiplicar()">
+                <input type="button" value="divisão" onclick="dividir()">
+              
+                </center> 
+                <script> //selection//(){
+                  //      var somar = window.document.querySelector('input#somar')
+                    //    var subtrair = window.document.querySelector('input#subtrair')
+                    //    var multiplicar = window.document.querySelector('input#multiplicar')
+                     //   var dividir = window.document.querySelector('input#dividir')
+                    
+               // }
+
+                </script>
+
+                <center>
+                <input type="number" name= "tx1" id ="tx1"> 
+                <input type="number" name= "tx2" id ="tx2"> 
+                <input type="button" value="resolver" onclick="Resolver()">
+                <input type="button" value="Zerar" onclick="Zerar()">
+                <div id="res">Resultado</div>
+                <div id = "clean"></div>
+                </center>
+
+                <script>
+                    function operação() {
+                        var somar = window.document.querySelector('input#soma')
+                        var subtrair = window.document.querySelector('input#subtração')
+                        var multiplicar = window.document.querySelector('input#multiplicação')
+                        var dividir = window.document.querySelector('input#divisão')
+                        var resolver = window.document.querySelector('input#resolver')
+                        var n1 = Number(tx1)
+                        var n2 = Number(tx2)
+                        var res = window.document.querySelector('div#res')
+                        var clean = window.dowcument.querySelector('div#clean')
+                        var soma = n1 + n2
+                        var sub = n1 - n2
+                        var multi = n1 * n2
+                        var divi = n1 / n2 
+                            if (operação === 'soma'){ window.write(soma)}
+                            if (operação === 'subtrair'){
+                            res.innerText = 'sub'}
+                            if (operação == 'Multiplicar'){
+                            res.innerText = 'multi'}
+                            if (operação == 'dividir'){
+                            res.innerText = 'divi'}
+                                            
+                    }
+                    </script>
+             
+'     
+         
+      //  <script>
+     //   function somar(){
+        //    if 
+           // var futebol = "Sport"
+            //if (futebol == "Sport"){
+            //console.log("Rubro Negro!")
+              //      }
+             // else { console.log("Sofredor!") }
+
+
+      //      var tn1 = window.document.getElementById('tx1')
+       //     var tn2 = window.document.getElementById('tx2')
+       //     var res = window.document.getElementById("res")
+       //     var n1 = Number(tn1.value)
+         //   var n2 = Number(tn2.value)
+         //   var s = n1 + n2
+         //   res.innerHTML = `A soma é igual a <strong>${s}</strong>`
+
+     //   function multi(){
+      //      var x1 = window.document.getElementById('x1')
+      //      var x2 = window.document.getElementById('x2')
+      //      var res = window.document.getElementById("resMulti")
+     //       var n1 = Number(x1.value)
+      //      var n2 = Number(x2.value)
+      //      var m = x1 * x2
+       //     resMulti.innerHTML = `A multiplicação é igual a <strong>${m}`
+  //      }
+    //    }
+            </script>    
+
+</body>
+
+
+</html>

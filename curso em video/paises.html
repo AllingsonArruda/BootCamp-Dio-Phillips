@@ -1,0 +1,40 @@
+<!DOCTYPE html>!
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name of countries!</title>
+</head>
+<body> 
+    <h1> Hey, what's up ?</h1>
+What is the name of your Country ? <input type="text" name="pais" id="pais">
+                                    <input type="button" value="verificar" onclick="verificar()"> 
+                                    <div id="res"> Result:
+                                        
+                                         </div>
+<script> function verificar(){
+        var country = window.document.querySelector('input#pais').value.toLowerCase()"
+        var res = window.document.querySelector('div#res')
+        //var nation = (country.value)      
+        if (country == 'Brasil || brasil'){
+       res.innerHtml = `You are Brazilian!`}
+    }
+        //else{ res.innerText = `You are not Brazilian`}}
+
+  
+
+       // var tn1 = window.document.getElementById('tx1')
+         //   var tn2 = window.document.getElementById('tx2')F
+          //  var res = window.document.getElementById("res")
+          //  var n1 = Number(tn1.value)
+          //  var n2 = Number(tn2.value)
+          //  var s = n1 + n2
+          //  res.innerHTML = `A soma é igual a <strong>${s}</strong>`
+        
+         //  país.innerHtml = `You are not Brazilian `
+
+  </script>
+
+</body>
+</html>
